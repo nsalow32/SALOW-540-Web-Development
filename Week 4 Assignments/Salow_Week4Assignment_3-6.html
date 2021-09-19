@@ -1,0 +1,85 @@
+<!--Week 4 Assignment 3.6. Nicole Salow. Sept. 16-18 2021. 
+ Create and test and HTML document that describes nested ordered lists of cars. T
+ he outer list must have three entries: compact, midsize and sprots.
+    Inside each of these 3 lists there must be two sublists of body styles.
+        The compact- and midsize-car sublists are two door and four door.
+        The sports-car sunlists are coupe and convertible
+    Each body style sublist must hace at least three entries, each of which is the make and model of a particular car that fits the category.
+    THe outer list must use uppercase ROman numerals, the middle lists must use the uppercase ltters, and the inner lists must use Arabic numerals. 
+    The background color for the compact-car list must be pink
+    The mid-size car must be blue
+    The sports car must be red.
+    All styles must be in a document style sheet!-->
+
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title>Week 4 Assignment</title>
+    <meta charset = "utf-8"/>
+
+    <link href="./SalowA4_3-6_style.css" type = "text/css" rel = "stylesheet" />
+
+    <body>
+        <form method = "GET" action = "http://acsg540.com/~ubuntu/acsg-540-2021f-examples/week4/"></form>
+
+        <ol>
+            <li class = "pink">Compact
+                <ol class = "pink">
+                    <li>Two-Door
+                        <ol>
+                            <li>Kia Forte</li>
+                            <li>Mazda Mazda3</li>
+                            <li>Volkswagen GTI</li>
+                        </ol>
+                    </li>    
+                    <li>Four-Door
+                        <ol>
+                            <li>Honda Fit</li>
+                            <li>MINI Cooper</li>
+                            <li>Hyundai Accent</li>
+                        </ol>
+                    </li>    
+                </ol>
+            </li>    
+
+            <li class = "blue">Midsize
+                <ol class = "blue">
+                    <li>Two-Door
+                        <ol>
+                            <li>Kia Forte</li>
+                            <li>Mazda Mazda3</li>
+                            <li>Volkswagen GTI</li>
+                        </ol>
+                    </li>    
+                    <li>Four-Door
+                        <ol>
+                            <li>Chevrolet Bolt</li>
+                            <li>Kia Rio</li>
+                            <li>Hyundai Ioniq</li>
+                        </ol>
+                    </li>    
+                </ol>
+            </li>    
+
+            <li class = "red">Sports
+                <ol class = "red">
+                    <li>Coupe
+                        <ol>
+                            <li>Alfa Romeo 4c</li>
+                            <li>Lexus RCF</li>
+                            <li>Dodge Viper</li>
+                        </ol>
+                    </li>    
+                    <li>Convertible
+                        <ol>
+                            <li>Audi R8 Spyder</li>
+                            <li>Jaguar F-Type</li>
+                            <li>Mazda MX-5 Miata</li>
+                        </ol>
+                    </li>    
+                </ol>
+            </li>    
+
+
+        </ol>

@@ -1,0 +1,54 @@
+/*Week 4 Assignment 3.2 CSS.*/
+
+body {
+    font-family: "helvetica", sans-serif;
+    font-size: .9em;
+}
+
+.iowa {
+    font-family: cursive;
+    color: gold;
+    padding-right: 25px;
+    text-align: right;
+}
+
+.ohio {
+    font-family: cursive;
+    color: silver;
+    padding-right: 25px;
+    text-align: right;
+}
+
+.istate {
+    font-family: cursive;
+    color: maroon;
+    padding-right: 25px;
+    text-align: right;
+}
+
+.kent {
+    font-family: cursive;
+    color: navy;
+}
+
+.indiana {
+    font-family: cursive;
+    color: red;
+}
+
+.illinois {
+    font-family: cursive;
+    color:orange;
+}
+
+
+td.win {font: bold 1.1em serif}
+
+td.lose {font: italic .8em sans-serif}
+
+th.header {font-family: helvetica, sans-serif;
+            font-size: .8em;
+            text-transform: uppercase;
+            padding-right: 80px;
+            text-align: center;
+        }

@@ -1,0 +1,56 @@
+<!--Week 4 Assignment 3.2. Nicole Salow. Sept. 16-18 2021. 
+    Create and test and HTML document that displays a table of football scores from a collegiate 
+    football conference in which the team names have one of the primary colors of their 
+    respective schools. The winning scores must appear larger and in a different font than 
+    the losing scores. The team names must be in a script font.!-->
+    
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title>Week 4 Assignment</title>
+    <meta charset = "utf-8" />
+
+    <link href="./SalowA4_3-2_style.css" type = "text/css" rel = "stylesheet" />
+
+    <body>
+        <form method = "GET" action = "http://acsg540.com/~ubuntu/acsg-540-2021f-examples/week4/"></form>
+        <table>
+            <caption><h3>Big 10 Week 3 Conference Scores</h3></caption>
+
+            <tr>
+                <td rowspan = "2"></td>
+                <th colspan = "4"></th>
+            </tr>
+
+            <tr>
+                <th class = "header">Opponent</th>
+                <th class = "header">Home Score</th>
+                <th class = "header">Opp Score</th>
+                <th class = "header">W/L</th>
+            </tr>
+
+            <tr>
+                <th class = "iowa">Iowa</th>
+                    <td class = "illinois">Illinois</td>
+                    <td>21</td>
+                    <td class = "lose">0</td>
+                    <td class = "win">W</td>
+            </tr>
+
+            <tr>
+                <th class = "ohio">Ohio State</th>
+                    <td class = "kent" >Kent State</td>
+                    <td>21</td>
+                    <td class = "lose">7</td>
+                    <td class = "win">W</td>
+            </tr>
+            <tr>
+                <th class = "istate">Iowa State</th>
+                    <td class = "indiana">Indiana</td>
+                    <td class = "lose">0</td>
+                    <td>42</td>
+                    <td class = "lose">L</td>
+            </tr>
+        </table>
+    </body>

@@ -1,0 +1,20 @@
+/*Week 4 Assignment 3.6 CSS.*/
+
+
+ol {list-style-type: upper-roman;}
+
+ol ol {list-style-type: upper-alpha;}
+
+ol ol ol {list-style-type: decimal;}
+
+.pink {
+    background-color: pink;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
