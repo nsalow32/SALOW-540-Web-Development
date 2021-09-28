@@ -9,12 +9,16 @@ ol ol ol {list-style-type: decimal;}
 
 .pink {
     background-color: pink;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .blue {
     background-color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 .red {
     background-color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
