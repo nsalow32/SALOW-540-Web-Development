@@ -1,0 +1,38 @@
+/*Week 5 Assignment 3.4 CSS.*/
+body {
+    margin: 0;
+}
+h1 {
+    background-color: gray;
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 12%;
+    padding-bottom: 5%;
+    font-size: 500%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white
+}
+
+.main-content {
+    margin-left: 12%;
+    margin-right: 12%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%;
+}
+
+.highlighted {
+    background-color: yellow;
+}
+
+.aside {
+    float: left;
+    background-color: maroon;
+    border: 1px solid gray;
+    padding: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 10%;
+    color: white;
+    margin-right: 5%;
+    margin-bottom: 3%;
+}
