@@ -1,0 +1,40 @@
+/*Week 5 Assignment 3.5 CSS.*/
+
+body {
+    margin: 0;
+}
+
+.p1 {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: pink;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p2 {
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: black;
+    color: yellow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.p3 {
+    text-indent: 1cm;
+    background-color:green;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: gray;
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    font-size: 250%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white
+}
