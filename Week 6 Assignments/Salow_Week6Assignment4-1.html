@@ -1,5 +1,6 @@
 <!--Week 5 Assignment 4.1. Nicole Salow. October 2, 2021.
 Output: A table of the numbers for 5 to 15 and their squares and cubes, using alert.
+--
 The author states to use the alert(string) function to output the table.  It is not possible to format the alert dialog by including HTML in it.  The author does not mean place the HTML in the alert dialog so the alert shows a table.
 
 For your homework, you can do one of two things
@@ -26,11 +27,39 @@ document.write("<tr><td>" + n1 + "</td><td>" + n1squared + "</td></tr>"); -->
     <title>Week 6 Assignment</title>
     <meta charset = "utf-8"/>
 
-    <link href="./SalowA5_4-1_style.css" type = "text/css" rel = "stylesheet"/>
+    <link href="./SalowA6_4-1_style.css" type = "text/css" rel = "stylesheet"/>
 </head>
 
     <body>
-        <form method = "GET" action = "http://acsg540.com/~ubuntu/acsg-540-2021f-examples/week6/"></form>
-
-
         <header>Salow Week 6 | Exercise 4.1</header>
+
+
+        <button onclick="numcube()">
+        <p>CLICK ME</p></button>
+        
+        <script type = "text/javascript">
+            function numcube():
+                document.write( 
+                    "<table> 
+                        <tr> 
+                            <th>Number</th> 
+                            <th>Square</th> 
+                            <th>Cube</th> 
+                        </tr>"
+                ) 
+                    
+                for(var n=0; n<=10; n++) { 
+                    document.write( 
+                        "<tr>
+                            <td>" + n + "</td>
+                            <td>" + n*n + "</td>
+                            <td>" + n*n*n + "</td>
+                        </tr>" ) 
+                } 
+                    
+                document.write( 
+                    "</table>" ) 
+        </script>
+           
+    </body>
+</html>
