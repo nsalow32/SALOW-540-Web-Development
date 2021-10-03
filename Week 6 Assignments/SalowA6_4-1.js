@@ -2,26 +2,6 @@
 
 
 function numcube() {
-    var n1 = 1;
-    var n1squared = Math.pow(n1,2)
-    var n1cubed = Math.pow(n1,3)
-    alert(n1 + " squared is " + n1squared + ", " + n1 + " cubed is" + n1cubed);
-
-    var n2 = 2;
-    var n2squared = Math.pow(n2,2)
-    var n2cubed = Math.pow(n2,3)
-    alert(n2 + " squared is " + n2squared + ", " + n2 + " cubed is " + n2cubed);
-
-    var n3 = 3;
-    var n3squared = Math.pow(n3,2)
-    var n3cubed = Math.pow(n3,3)
-    alert(n3 + " squared is " + n3squared + ", " + n3 + " cubed is "+ n3cubed);
-
-    var n4 = 4;
-    var n4squared = Math.pow(n4,2)
-    var n4cubed = Math.pow(n4,3)
-    alert(n4 + " squared is " + n4squared + ", " + n4 + " cubed is "+ n4cubed);
-
     var n5 = 5;
     var n5squared = Math.pow(n5,2)
     var n5cubed = Math.pow(5,3)
