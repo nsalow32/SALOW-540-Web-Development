@@ -26,40 +26,40 @@ document.write("<tr><td>" + n1 + "</td><td>" + n1squared + "</td></tr>"); -->
     <head>
         <title>Week 6 Assignment</title>
         <meta charset = "utf-8"/>
-
-        <link href="./SalowA6_4-1_style.css" type = "text/css" rel = "stylesheet"/>
     </head>
 
         <body>
             <header>Salow Week 6 | Exercise 4.1</header>
 
+            <script type = "text/javascript" src = "./SalowA6_4-1.js">
+            </script>
 
-            <button onclick="numcube()">
-            <p>CLICK ME</p></button>
+            <button onclick = "numcube()">
+            CLICK ME</button>
             
-            <script type = "text/javascript">
-                function numcube():
+                
+        </body>
+</html>
+
+
+<!--<script type = "text/javascript">
+                function numcube(): {
                     document.write( 
-                        "<table> 
+                        '<table> 
                             <tr> 
-                                <th>Number</th> 
-                                <th>Square</th> 
-                                <th>Cube</th> 
-                            </tr>"
-                    ) 
+                                <th>Number</th> <th>Square</th> <th>Cube</th> 
+                            </tr>')
+                        } 
                         
                     for(var n=0; n<=10; n++) { 
                         document.write( 
-                            "<tr>
+                            '<tr>
                                 <td>" + n + "</td>
                                 <td>" + n*n + "</td>
                                 <td>" + n*n*n + "</td>
-                            </tr>" ) 
+                            </tr>') 
                     } 
                         
                     document.write( 
-                        "</table>" ) 
-            </script>
-            
-        </body>
-</html>
+                        <td>' + Math.pow(n, 1) + '</td>
+                        '</table>' ) -->
