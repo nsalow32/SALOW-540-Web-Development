@@ -23,43 +23,43 @@ document.write("<tr><td>" + n1 + "</td><td>" + n1squared + "</td></tr>"); -->
 <!DOCTYPE html>
 <html lang = "en">
 
-<head>
-    <title>Week 6 Assignment</title>
-    <meta charset = "utf-8"/>
+    <head>
+        <title>Week 6 Assignment</title>
+        <meta charset = "utf-8"/>
 
-    <link href="./SalowA6_4-1_style.css" type = "text/css" rel = "stylesheet"/>
-</head>
+        <link href="./SalowA6_4-1_style.css" type = "text/css" rel = "stylesheet"/>
+    </head>
 
-    <body>
-        <header>Salow Week 6 | Exercise 4.1</header>
+        <body>
+            <header>Salow Week 6 | Exercise 4.1</header>
 
 
-        <button onclick="numcube()">
-        <p>CLICK ME</p></button>
-        
-        <script type = "text/javascript">
-            function numcube():
-                document.write( 
-                    "<table> 
-                        <tr> 
-                            <th>Number</th> 
-                            <th>Square</th> 
-                            <th>Cube</th> 
-                        </tr>"
-                ) 
-                    
-                for(var n=0; n<=10; n++) { 
+            <button onclick="numcube()">
+            <p>CLICK ME</p></button>
+            
+            <script type = "text/javascript">
+                function numcube():
                     document.write( 
-                        "<tr>
-                            <td>" + n + "</td>
-                            <td>" + n*n + "</td>
-                            <td>" + n*n*n + "</td>
-                        </tr>" ) 
-                } 
-                    
-                document.write( 
-                    "</table>" ) 
-        </script>
-           
-    </body>
+                        "<table> 
+                            <tr> 
+                                <th>Number</th> 
+                                <th>Square</th> 
+                                <th>Cube</th> 
+                            </tr>"
+                    ) 
+                        
+                    for(var n=0; n<=10; n++) { 
+                        document.write( 
+                            "<tr>
+                                <td>" + n + "</td>
+                                <td>" + n*n + "</td>
+                                <td>" + n*n*n + "</td>
+                            </tr>" ) 
+                    } 
+                        
+                    document.write( 
+                        "</table>" ) 
+            </script>
+            
+        </body>
 </html>
