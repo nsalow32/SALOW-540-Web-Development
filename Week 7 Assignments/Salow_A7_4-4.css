@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color:olive;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    font-size: 180%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+
+.numbers {
+    margin: 5px;
+    padding: 5px;
+    color: olive;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 110%;
+}

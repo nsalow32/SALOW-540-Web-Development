@@ -1,0 +1,39 @@
+<!--Week 7 Assignment 4.4. Nicole Salow. October 10, 2021.
+    Modify the script of exercise 4.2 to use prompt to input a number n that is the number of the Fibonacci number required as output.-->
+
+
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <title>Week 7 Assignment</title>
+        <meta charset = "utf-8"/>
+
+        <link href="./Salow_A7_4-4.css" type = "text/css" rel = "stylesheet"/>
+
+    </head>
+
+    <body>
+        <header>Salow Week 7 | Exercise 4.4</header>
+
+        <script type = "text/javascript">
+            var first = 0;
+            var second = 1;
+            var next_number;
+            var i;  
+            var n = parseInt (prompt (" Enter how far you want the Fibonacci Series to go (an integer): "));  
+                
+            document.write("<p class = 'numbers'> Fibonacci Series: </p>");  
+                
+            for ( i = 1; i <= n; i++)  
+                {  document.write (first + ", "); 
+                    next_number = first + second; 
+                    
+                    first = second;
+                    first = next_number;
+                } 
+        </script>
+            
+    </body>
+</html>
+
