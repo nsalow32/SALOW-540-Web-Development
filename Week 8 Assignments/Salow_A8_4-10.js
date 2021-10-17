@@ -4,7 +4,6 @@
     //PARAMETER: A string.
     //RETURNS: The position in the string of the leftmost vowel.
 
-
     function first_vowel(str) {
         var letter;
         for (var position = 0; position < str.length; position++) {
