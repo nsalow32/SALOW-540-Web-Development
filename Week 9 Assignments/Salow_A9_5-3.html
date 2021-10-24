@@ -1,0 +1,86 @@
+<!--Week 9 Assignment 5.3. Nicole Salow. October 23, 2021.
+    -Develop and test an HTML document that has checkboxes for 
+        -apple (59 cents each)
+        -orange (49 cents each)
+        -banana (39 cents each)
+        -Submit button
+    -Each checkbox should have its own ONCLICK event handler. These handlers must add the cost of their fruit to a total cost.
+    -An event handler for the Submit button must produce an ALERT window with the message "Your total cost is $xxx", where xxx is teh total cost of the chosen fruit, including 5% sales tax. This handler must return FALST (to avoid actual submission of the form data).
+-->
+<!DOCTYPE html>
+<html lang = "en">
+
+
+<head>
+    <title>Week 9 Assignment</title>
+    <meta charset = "utf-8" />
+
+    <link href="./Salow_A9_5-3.css" type = "text/css" rel = "stylesheet"/>
+
+    <script type = "text/javascript">
+
+        var formatter = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+
+        //minimumFractionDigits: 0, // (this suffices for whole numbers, but will print 2500.10 as $2,500.1)
+        //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
+        });
+
+        var price=0;
+
+        function priceApple() {
+            price+=59;
+        }
+        function priceOrange() {
+            price+=49;
+        }
+        function priceBanana() {
+            price+=39;
+        }
+        function TotalPrice() {
+            var total;
+            total=price+price*0.05;
+            alert("Your total cost is : "+total+" cents.");
+        }
+
+    </script>
+
+</head>
+
+
+<body>
+
+    <header>Salow Week 9 | Exercise 5.3</header>
+
+    <form action="" id="theForm">
+
+        <p class = "title">
+            FRUIT PURCHASING FORM
+        </p>
+
+        <p class = "text">
+            <label>
+                <input type = "checkbox" name = "fruit" id = "Apple" onclick = "priceApple()"/> Apple (.59 cents each)
+            </label>
+            <br /> <br />
+            
+            <label>
+                <input type = "checkbox" name = "fruit" id = "Orange" onclick = "priceOrange()"/> Orange (.49 cents each)
+            </label>
+            <br /> <br />
+
+
+            <label>
+                <input type = "checkbox" name = "fruit" id = "Banana" onclick = "priceBanana()"/> Banana (.39 cents each)
+            </label>
+            <br /> <br />
+
+            <input type = "submit" value = "Purchase" onclick = "TotalPrice(); return false"/>
+            
+            <input type = "reset" value = "Clear Form"/>
+        </p>
+    </form>
+
+</body>
+</html>
