@@ -1,0 +1,39 @@
+<!--Week 10 Assignment 6.5. Nicole Salow. October 30, 2021.
+The doucment must display an image and three buttons. The buttons should be labeled 1, 2, & 3. When pressed, each button should change the content of the image to that of a different image.
+-->
+
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title>Week 10 Assignment 6.5</title>
+    <meta charset = "utf-8" />
+
+    <link href="./Salow_A10_6-5.css" type = "text/css" rel = "stylesheet"/>
+
+
+    <script type = "text/javascript" src = "./Salow_A10_6-5.js">
+    </script>
+
+</head>
+
+    <body>
+        
+        <header>Salow Week 10 | Exercise 6.5</header>
+
+        <p>
+            <img class = "trinkets" id = "trinkets" height = "300" width = "300" visibility = "visible" src = "../Week 10 Assignments/W10_images/image1.JPG" alt = "(Trinkets from my Grandmother's House)" onclick = "toTop('trinkets')"/>
+
+            <img class = "GramCousins" id = "GramCousins" height = "300" visibility = "hidden" width = "350" src = "../Week 10 Assignments/W10_images/IMG_0229.JPG" alt = "(Cousins Lena & Carly & our Gradma Mona, who passed away October 2021.)" onclick = "toTop('GramCousins')"/>
+
+
+            <img class = "GrandmaD" id = "GrandmaD" height = "300" visibility = "hidden" width = "350" src = "../Week 10 Assignments/W10_images/DomeyerXmas2020_web-3487.jpg" alt = "(Me & Grandma D.)" onclick = "toTop('GrandmaD')"/>
+        </p> 
+
+        <input type = "button" class = buttons value = "1" onclick = "toTop('trinkets')"/>
+        <input type = "button" value = "2" onclick = "toTop('GramCousins')"/>
+        <input type = "button" value = "3" onclick = "toTop('GrandmaD')"/>
+
+        
+    </body>
+</html>

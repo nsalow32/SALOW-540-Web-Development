@@ -1,0 +1,91 @@
+<!--Week 10 Assignment 6.4. Nicole Salow. October 30, 2021.
+    -The document must have a paragraph of text that describes your home. 
+    -Choose at least three different phrases (three to six words each) of this paragraph
+        -Make them change font, font style, color and font size when the moust cursor is placed over them.
+        -Each of the different phrases must change to a different font, font-stle, color and font-size.
+-->
+
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title>Week 10 Assignment 6.4</title>
+    <meta charset = "utf-8" />
+
+    <link href="./Salow_A10_6-4.css" type = "text/css" rel = "stylesheet"/>
+
+    <script type = "text/javascript">
+        function changeTextColor(event) {
+            event.currentTarget.style.color = "purple";
+        }
+    
+        function changeFont1(e) {
+            e.currentTarget.style.fontFamily = "Impact";
+            e.currentTarget.style.fontSize = "150%";
+            e.currentTarget.style.fontStyle = "italic";
+            e.currentTarget.style.color = "orange";
+        }
+
+        function changeFont2(e2) {
+            e2.currentTarget.style.fontFamily = "Helvetica";
+            e2.currentTarget.style.fontSize = "75%";
+            e2.currentTarget.style.fontStyle = "bold";
+            e2.currentTarget.style.color = "teal";
+        }
+
+        function changeFont3(e3) {
+            e3.currentTarget.style.fontFamily = "Comic Sans";
+            e3.currentTarget.style.fontSize = "10%";
+            e3.currentTarget.style.fontStyle = "oblique";
+            e3.currentTarget.style.color = "maroon";
+
+        }
+
+        function changeBack(ev) {
+            ev.currentTarget.style = "body";
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <header>Salow Week 10 | Exercise 6.4</header>
+
+   <h1 id = "heading">Nicole's Home</h1> 
+   
+   <p>My home is on a tree-lined street in southern Joliet. In the fall, the leaves change to a beauitful gold color, and as they fall to the ground my street looks straight out of a movie. <br /><br />
+    </p>
+    
+    <p id = "para">The house I rent is very small–roughly 700sq. ft.</p>
+    
+    <p>I live here with my boyfriend, Lucas and my dog, Luca. </p>
+    
+    <p id = "para2">The brick house was built in the early 1950s and has the original hardwood floors, 2 bedrooms, 1.5 bathrooms and a finished basement.<br /><br /></p>
+
+    <p id = "para3">We moved into the house in August of 2019, and will likely live here for a few more years before moving on.
+    </p>
+
+
+
+    <script type = "text/javascript">
+        var heading = document.getElementById("heading");
+        var para = document.getElementById("para");
+        var para2 = document.getElementById("para2");
+        var para3 = document.getElementById("para3");
+        var originalFont = para.style.fontFamily = "Verdana, Geneva, Tahoma, sans-serif";
+
+
+        heading.addEventListener("click", changeTextColor, false);
+        para.addEventListener("mouseover", changeFont1, false);
+        para2.addEventListener("mouseover", changeFont2, false);
+        para3.addEventListener("mouseover", changeFont3, false);
+        para.addEventListener("mouseout", changeBack, false);
+        para2.addEventListener("mouseout", changeBack, false);
+        para3.addEventListener("mouseout", changeBack, false);
+
+
+    </script>
+</body>
+</html>
