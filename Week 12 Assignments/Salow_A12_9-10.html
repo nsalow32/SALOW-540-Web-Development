@@ -1,0 +1,79 @@
+<!-- Nicole Salow. ACSG 540. 11-14-21. Chapter 9 Excercise 9.9-9.10. 
+Create and test an HTML document that has a form with the following controls: 
+a. a text widget to collect the users name
+b. four checkboxes, one each for the following items:
+    i. Four 25-watt light blubls for $2.39
+    ii. Eight 25-watt light bulbs for $4.29
+    iii. four 25-watt long-life light bulbls for $3.95
+    iv. Eight 25-watt long-life light bulbs for $7.49
+c. A collection of three radio buttons that are labeled as follows:
+    i. Visa
+    ii. Mastercard
+    iii. Discover
+
+Write a PHP script that computes the total cost of the orderede light bulbs from 9.9 after adding 6.2% sales tax. The program must inform the buyer of exactly what was ordered, in a table.
+-->
+    
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title>Light Bulb Purchasing Form</title>
+    <meta charset = "utf-8" />
+</head>
+    <body>
+            <h2>Lightbulb Purchasing Form</h2>
+            Welcome to the Lightbulb Company Page. Please fille out the form below to make your purchase.
+        <br /><br />
+
+        <form action="Salow_A12_9-10.php" method="post">
+
+            <!--TEXT BOX-->
+             <table>
+                 <tr>
+                    <td><strong>First Name: </strong></td>
+                    <td><input type = "text" name = "fname" size = "30" /></td>
+                    <td><strong>Last Name: </strong></td>
+                    <td><input type = "text" name = "lname" size = "30" /></td>
+                </tr>
+            </table>
+            <br /> <br />
+
+            <!--FOUR CHECK BOXES-->
+                <strong>Choose one or more options below.</strong><br/>
+                <label>
+                    <input type = "checkbox" name = "Four25W"
+                        value = "Four 25 watt"/> Four 25-watt light bulbs for $2.39 
+                </label><br />
+                <label>
+                    <input type = "checkbox" name = "Eight25W"
+                        value = "Eight 25-watt"/> Eight 25-watt light bulbs for $4.29 
+                </label><br />
+                <label>
+                    <input type = "checkbox" name = "Four25Wlong"
+                        value = "four 25-watt long-life"/> Four 25-watt <em>long-life</em> light bulbs for $3.95 
+                </label><br />
+                <label>
+                    <input type = "checkbox" name = "Eight25Wlong"
+                        value = "Eight 25-watt long-life"/> Eight 25-watt <em>long-life</em> light bulbs for $7.49
+                </label><br /><br />      
+
+
+            <!--THREE RADIO BUTTONS-->
+                <strong>Payment Method:</strong><br />
+                <label><input type = "radio" name = "paymentmethod" value = "visa" checked = "checked"/>Visa</label>
+                <br />
+                <label><input type = "radio" name = "paymentmethod" value = "mastercard"/>Mastercard</label>
+                <br />
+                <label><input type = "radio" name = "paymentmethod" value = "discover"/>Discover</label>
+                <br /><br />
+            
+            
+            
+            <!--SUBMIT & RESET BUTTONS-->
+                <input type = "submit" value = "Submit Order" />
+                <input type = "reset" value = "Clear Order Form"/>
+
+        </form>
+    </body>
+</html>
