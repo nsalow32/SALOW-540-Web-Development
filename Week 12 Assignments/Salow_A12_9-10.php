@@ -72,7 +72,7 @@
                     <td> <?php print ("$Eight25Wlong_cost" * .062); ?> </td>
                 </tr>
 
-                <?php print ("Your total cost is $" + $final_price); ?>
+                <?php print ("$fname" + "$lname" + ", Your total cost is $" + $final_price); ?>
             
             
             </table>
