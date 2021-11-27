@@ -75,7 +75,7 @@
                 <?php
                     print "You Ordered: $all_items item(s). <br />";
                     printf ("Your total cost including tax is: $%.2f <br />", $total_price + $tax);
-                    print "Your method of payment is: $paymentmethod <br />";
+                    print "Your payment method is: $paymentmethod <br />";
     ?>            
             
             </table>

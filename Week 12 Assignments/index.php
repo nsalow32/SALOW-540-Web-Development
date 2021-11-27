@@ -24,10 +24,10 @@
                 $paymentmethod = $_POST["paymentmethod"];
 
                 // If any checkboxes are blank/unchecked, set to zero (0)//
-                if (empty($Four25W = 0)); else $Four25W = 2.39;
-                if ($Eight25W == null) $Eight25W = 0;
-                if ($Four25Wlong == null) $Four25Wlong = 0;
-                if ($Eight25Wlong == null) $Eight25Wlong = 0;
+                if ($Four25W == NULL) $Four25W = 0;
+                if ($Eight25W == NULL) $Eight25W = 0;
+                if ($Four25Wlong == NULL) $Four25Wlong = 0;
+                if ($Eight25Wlong == NULL) $Eight25Wlong = 0;
 
                 // Compute item cost and total cost with tax//
                 $Four25W_cost = 2.39 * $Four25W;
@@ -35,11 +35,16 @@
                 $Four25Wlong_cost = 3.95 * $Four25Wlong;
                 $Eight25Wlong_cost = 7.49 * $Eight25Wlong;
 
-                $total_price = $Four25W_cost . $Eight25W_cost . $Four25Wlong_cost . $Eight25Wlong_cost;
-
-                $final_price = $total_price * .062;
+                $total_price = $Four25W_cost + $Eight25W_cost + $Four25Wlong_cost + $Eight25Wlong_cost;
+                $all_itmes = $Four25W + $Eight25W + $Four25Wlong + $Eight25Wlong;
+                $salestax = $total_price * .062;
                 ?>
 
+            <p>
+                <?php
+                    print ("$fname $lname");
+                ?>
+            </p>
 
             <table>
                 <tr>
@@ -67,8 +72,11 @@
                     <td> <?php print ("$Eight25Wlong_cost" * .062); ?> </td>
                 </tr>
 
-                <?php print ($fname . $lname . ", your total cost is $" . $final_price); ?>
-            
+                <?php
+                    print "You Ordered: $all_items item(s). <br />";
+                    printf ("Your total cost including tax is: $%.2f <br />", $total_price + $tax);
+                    print "Your payment method is: $paymentmethod <br />";
+    ?>            
             
             </table>
     </body>
