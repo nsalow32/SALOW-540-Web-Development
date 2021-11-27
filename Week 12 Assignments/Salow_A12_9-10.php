@@ -36,8 +36,8 @@
                 $Eight25Wlong_cost = 7.49 * $Eight25Wlong;
 
                 $total_price = $Four25W_cost + $Eight25W_cost + $Four25Wlong_cost + $Eight25Wlong_cost;
-
-                $final_price = $total_price * .062;
+                $all_itmes = $Four25W + $Eight25W + $Four25Wlong + $Eight25Wlong;
+                $salestax = $total_price * .062;
                 ?>
 
             <p>
@@ -72,8 +72,11 @@
                     <td> <?php print ("$Eight25Wlong_cost" * .062); ?> </td>
                 </tr>
 
-                <?php print ("$fname" + "$lname" + ", Your total cost is $" + $final_price); ?>
-            
+                <?php
+                    print "You Ordered: $all_items item(s). <br />";
+                    printf ("Your total cost including tax is: $%.2f <br />", $total_price + $tax);
+                    print "Your method of payment is: $paymentmethod <br />";
+    ?>            
             
             </table>
     </body>
