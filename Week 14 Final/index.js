@@ -3,7 +3,7 @@ function getImages() {
 
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && xhr.status == 200) {
-            document.getElementById("make".value = xhr.responseText;
+            document.getElementById("make".value = xhr.responseText)
         }
     }
 
