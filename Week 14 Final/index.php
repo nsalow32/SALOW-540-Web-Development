@@ -20,7 +20,7 @@
     require_once(__DIR__ . '/vendor/autoload.php');
 
     $api_instance = new GPH\Api\DefaultApi();
-    $api_key = "EMnm5fpUKYhxn6dIpYuXzCW5s6YiEtyb"; // string | Giphy API Key.
+    $api_key = "placeholder"; // string | Giphy API Key.
     $q = "highland cows"; // string | Search query term or prhase.
     $limit = 50; // int | The maximum number of records to return.
     $offset = 0; // int | An optional results offset. Defaults to 0.
